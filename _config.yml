@@ -1,0 +1,42 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+
+
+# Site settings
+title: TechBlog - A blog on technology
+email: diweshsaxena@gmail.com
+description: A blog about what fascinates me and what does not in my own-aware tech knowledge. I would also be happy to share some tips and tricks that might come handy. So sstay tuned !!
+url: "http://techblogs.me" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+gems: [jekyll-paginate, jekyll-gist]
+paginate: 3
+
+
+# Build settings
+markdown: kramdown
+permalink: /:title
+
+#Default Settings
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post" 
+      author: Diwesh Saxena
+      category: TechBlogs
+      comments: true
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "page" 
+      
